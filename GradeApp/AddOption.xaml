@@ -1,0 +1,15 @@
+﻿<Window x:Class="GradeApp.AddOption"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GradeApp"
+        mc:Ignorable="d"
+        Title="AddOption" Height="300" Width="400">
+    <Grid>
+        <Label Content="您想添加的课程是" Margin="47,50,234,187"/>
+        <TextBlock Margin="47,99,69,138" Text="" Background="#FFE0E0E0"></TextBlock>
+        <Button Content="Next" HorizontalAlignment="Left" Margin="307,240,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="227,240,0,0" VerticalAlignment="Top" Width="75"/>
+    </Grid>
+</Window>
