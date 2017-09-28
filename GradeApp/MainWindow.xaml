@@ -11,8 +11,8 @@
             <ColumnDefinition Width="354*"/>
         </Grid.ColumnDefinitions>
      
-        <ListBox HorizontalAlignment="Left" Height="268" Margin="10,28,0,0" VerticalAlignment="Top" Width="143" Background="AliceBlue"/>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="268" Margin="15,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="224"/>
+        <ListBox Name="List" HorizontalAlignment="Left" Height="268" Margin="10,28,0,0" VerticalAlignment="Top" Width="143" Background="AliceBlue" SelectionChanged="List_OnSelectionChanged"/>
+        <TextBox Grid.Column="1" Name="TextBox" HorizontalAlignment="Left" Height="268" Margin="15,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="224"/>
         <Button Content="添加课程" HorizontalAlignment="Left" Margin="244,0,0,0" VerticalAlignment="Top" Width="50" Height="50" Background="Aqua" Grid.Column="1" Click="Button_Click">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
@@ -32,6 +32,10 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
+        <Label Content="GPA" Name="GpaLabel" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="254,169,0,0" VerticalAlignment="Top" Width="90"/>
+        <Label Content="0" Name="GpaVal" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="254,198,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Average" Name="AvLabel" Grid.Column="1" HorizontalAlignment="Left" Height="26" Margin="254,221,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="0" Name="AvVal" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="254,247,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>

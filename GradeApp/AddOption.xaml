@@ -7,9 +7,17 @@
         mc:Ignorable="d"
         Title="AddOption" Height="300" Width="400">
     <Grid>
-        <Label Content="您想添加的课程是" Margin="47,50,234,187"/>
-        <TextBlock Margin="47,99,69,138" Text="" Background="#FFE0E0E0"></TextBlock>
-        <Button Content="Next" HorizontalAlignment="Left" Margin="307,240,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Cancel" HorizontalAlignment="Left" Margin="227,240,0,0" VerticalAlignment="Top" Width="75"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="264*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <Label Name="Label" Content="您想添加的课程是" Margin="47,50,57,182.333"/>
+        <TextBox IsEnabled="True" Name="Content" Margin="47,99,69,133.333" Text="" Background="#FFE0E0E0"></TextBox>
+        <Button Content="Next" Name="NextBtn" HorizontalAlignment="Left" Margin="307,240,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Cancel" Name="Cancel" HorizontalAlignment="Left" Margin="227,240,0,0" VerticalAlignment="Top" Width="75" Click="Cancel_OnClick"/>
+        <Label Content="" Name="Warning" HorizontalAlignment="Left" Margin="47,136,0,0" VerticalAlignment="Top" Width="152" Height="16" FontSize="10" Padding="0" Foreground="Red"/>
+        <RadioButton Name="RadioButton1" Visibility="Collapsed" Content="YES" HorizontalAlignment="Left" Margin="124,170,0,0" VerticalAlignment="Top" GroupName="isOption" IsChecked="True"/>
+        <RadioButton Name="RadioButton2" Visibility="Collapsed" Content="NO" HorizontalAlignment="Left" Margin="195,170,0,0" VerticalAlignment="Top" GroupName="isOption"/>
+
     </Grid>
 </Window>
